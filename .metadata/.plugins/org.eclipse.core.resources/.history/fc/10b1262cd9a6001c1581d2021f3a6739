@@ -1,0 +1,38 @@
+package fis.java.topic8;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class CalculationTest {
+
+	private Calculation calculation;
+
+	@Before
+	public void setUp() throws Exception {
+		calculation = new Calculation();
+	}
+
+	@Test
+	public void testAdd() {
+		assertEquals(6, calculation.add(4, 2));
+	}
+
+	@Test
+	public void testSub() {
+		assertEquals(2, calculation.sub(4, 2));
+	}
+
+	@Test
+	public void testMulti() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDevide() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,43 @@
+package fis.java.topic8;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class CalculationTest {
+
+	private Calculation calculation;
+
+	@BeforeClass
+	public void setUp() throws Exception {
+		calculation = new Calculation();
+	}
+
+	@Test
+	public void testAdd() {
+		assertEquals(6, calculation.add(4, 2));
+	}
+
+	@Test
+	public void testSub() {
+		assertEquals(2, calculation.sub(4, 2));
+	}
+
+	@Test
+	public void testMulti() {
+		assertEquals(8, calculation.multi(4, 2));
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testDevide_0() {
+		calculation.devide(4, 0);
+	}
+	
+	@Test
+	public void testDevide_1() {
+		assertEquals(2, calculation.devide(4, 2));
+	}
+}

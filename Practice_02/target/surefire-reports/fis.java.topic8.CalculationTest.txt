@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: fis.java.topic8.CalculationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.184 s <<< FAILURE! - in fis.java.topic8.CalculationTest
+initializationError(fis.java.topic8.CalculationTest)  Time elapsed: 0.069 s  <<< ERROR!
+java.lang.Exception: Method setUp() should be static
+
